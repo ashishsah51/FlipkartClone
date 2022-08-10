@@ -15,7 +15,7 @@ dotenv.config();
 const PORT=process.env.PORT || 8000;
 const userName=process.env.DB_USERNAME;
 const password=process.env.DB_PASSWORD;
-const URL=`mongodb+srv://${userName}:${password}@ecommerceweb.rfiam.mongodb.net/ECOMMERCE?retryWrites=true&w=majority`
+const URL=`mongodb+srv://${userName}:${password}@ecommerceweb.ipi73.mongodb.net/ECOMMERCE?retryWrites=true&w=majority`;
 
 Connection(process.env.MONGODB_URI || URL);
 

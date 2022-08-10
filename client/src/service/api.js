@@ -1,5 +1,5 @@
  import axios from 'axios';
-const url = ""
+const url = "http://localhost:8000"
  export const authenticationSignup = async(user) =>{
     try {
         return await axios.post(`${url}/signup`,user)

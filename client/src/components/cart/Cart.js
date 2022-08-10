@@ -9,7 +9,6 @@ import { payUsingPaytm } from "../../service/api";
 import { post } from "../../utils/Paytm";
 const useStyles = makeStyles(theme =>({
     component:{
-        // marginTop:55,
         padding:'30px 130px',
         display:'flex',
         [theme.breakpoints.down('sm')]:{
@@ -17,7 +16,6 @@ const useStyles = makeStyles(theme =>({
         }
     },
     leftComponent:{
-        // width:'67%'
         [theme.breakpoints.down('sm')]:{
             paddingBottom:15
         }

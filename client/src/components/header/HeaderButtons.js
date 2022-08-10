@@ -8,7 +8,7 @@ import { LoginContext } from "../../context/ContextProvider";
 import Profile from "./Profile";
 import { useSelector } from "react-redux";
 
-const useStyles = makeStyles(theme =>({
+const useStyles = makeStyles((theme) => ({
   login: {
     background: "white",
     color: "#2874F0",
@@ -17,17 +17,16 @@ const useStyles = makeStyles(theme =>({
     borderRadius: 2,
     padding: "5px 40px",
     boxShadow: "none",
-    [theme.breakpoints.down('sm')]:{
-      color:'#ffffff',
-      background:'#2874F0'
-    }
-   
+    [theme.breakpoints.down("sm")]: {
+      color: "#ffffff",
+      background: "#2874F0",
+    },
   },
   container: {
     display: "flex",
-    [theme.breakpoints.down('sm')]:{
-      display:'block'
-    }
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+    },
   },
   wrapper: {
     margin: "0 7% 0 auto",
@@ -37,22 +36,18 @@ const useStyles = makeStyles(theme =>({
       alignItems: "center",
       textDecoration: "none",
       color: "#ffffff",
-      [theme.breakpoints.down('sm')]:{
-        color:'#2874F0',
-        display:'flex',
-        flexDirection:'column',
-        alignItems:'center',
-        marginTop:10
+      [theme.breakpoints.down("sm")]: {
+        color: "#2874F0",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        marginTop: 10,
       },
-     
     },
-    [theme.breakpoints.down('sm')]:{
-      display:'block'
-    }
-   
-  
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+    },
   },
-  
 }));
 
 const HeaderButtons = () => {
@@ -64,7 +59,7 @@ const HeaderButtons = () => {
   const openLoginDialog = () => {
     setOpen(true);
   };
-  const {cartItems} = useSelector(state => state.addToCart)
+  const { cartItems } = useSelector((state) => state.addToCart);
 
   return (
     <Box className={classes.wrapper}>

@@ -21,9 +21,9 @@ const Profile = ({ account, setAccount }) => {
   const handleClick = (event) => {
     setOpen(event.currentTarget);
   };
-  const logout =()=>{
-      setAccount(false);
-  }
+  const logout = () => {
+    setAccount(false);
+  };
   return (
     <>
       <Link>
@@ -39,7 +39,12 @@ const Profile = ({ account, setAccount }) => {
         onClose={handleClose}
         className={classes.component}
       >
-        <MenuItem onClick={() =>{handleClose();logout();}}>
+        <MenuItem
+          onClick={() => {
+            handleClose();
+            logout();
+          }}
+        >
           <PowerSettingsNewIcon fontSize="small" color="primary" />
           <Typography className={classes.text}>Logout</Typography>
         </MenuItem>
